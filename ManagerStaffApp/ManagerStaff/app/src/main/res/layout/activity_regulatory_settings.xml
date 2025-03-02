@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.RegulatorySettingsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/background_cus">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:foreground="@drawable/animation_click"
+            android:src="@drawable/icon_back_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_title_funtion_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cài đặt quy định"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_header"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txt_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời gian vào"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_time_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_outline_round"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_title1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txt_title1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_get_time_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_clock"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_time_in"
+                    app:layout_constraintStart_toEndOf="@+id/txt_time_in"
+                    app:layout_constraintTop_toTopOf="@+id/txt_time_in" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_time_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="20:30"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/txt_title20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời gian ra"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_time_start" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_time_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_outline_round"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_title20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txt_title20">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_get_time_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_clock"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_time_out"
+                    app:layout_constraintStart_toEndOf="@+id/txt_time_out"
+                    app:layout_constraintTop_toTopOf="@+id/txt_time_out" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_time_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="20:30"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/txt_title21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hệ số lương ngày nghỉ"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_time_end" />
+
+            <TextView
+                android:id="@+id/star1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/star"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/red"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/txt_title21"
+                app:layout_constraintTop_toBottomOf="@+id/layout_time_end" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_day_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_outline_round"
+                android:hint="Hệ số lương ngày nghỉ"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title21" />
+
+            <TextView
+                android:id="@+id/txt_title22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hệ số lương nghỉ lễ"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_day_off" />
+
+            <TextView
+                android:id="@+id/star2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/star"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/red"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/txt_title22"
+                app:layout_constraintTop_toBottomOf="@+id/edt_day_off" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_holiday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_outline_round"
+                android:hint="Hệ số lương nghỉ lễ"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="10dp"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title22" />
+
+            <TextView
+                android:id="@+id/txt_title23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hệ số lương tăng ca"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_holiday" />
+
+            <TextView
+                android:id="@+id/star3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/star"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/red"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/txt_title23"
+                app:layout_constraintTop_toBottomOf="@+id/edt_holiday" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_overtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_outline_round"
+                android:hint="Hệ số lương tăng ca"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="10dp"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title23" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_cus_dark_shadow"
+        android:foreground="@drawable/animation_click"
+        android:padding="5dp"
+        android:text="Xác nhận"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>

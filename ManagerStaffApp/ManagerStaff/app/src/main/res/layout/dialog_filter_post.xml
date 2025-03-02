@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_filter_post"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="30dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:foreground="@drawable/animation_click"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_close_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Bộ lọc tìm kiếm"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_time_start_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="Từ:"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+        <TextView
+            android:id="@+id/txt_time_start_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/border_outline_round"
+            android:paddingVertical="5dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="35dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+        <ImageView
+            android:id="@+id/img_show_clock_time_start_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/animation_click"
+            android:padding="5dp"
+            android:src="@drawable/icon_clock"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_time_start_post"
+            app:layout_constraintEnd_toEndOf="@+id/txt_time_start_post"
+            app:layout_constraintTop_toTopOf="@+id/txt_time_start_post" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_time_end_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="Đến:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_time_start_post" />
+
+        <TextView
+            android:id="@+id/txt_time_end_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_outline_round"
+            android:paddingVertical="5dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="35dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_time_start_post" />
+
+        <ImageView
+            android:id="@+id/img_show_clock_time_end_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/animation_click"
+            android:padding="5dp"
+            android:src="@drawable/icon_clock"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_time_end_post"
+            app:layout_constraintEnd_toEndOf="@+id/txt_time_end_post"
+            app:layout_constraintTop_toTopOf="@+id/txt_time_end_post" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_type_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Loại tin tức:"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_time_end_post" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/botron_edittext"
+            android:backgroundTint="@color/blue"
+            android:layout_marginBottom="20dp"
+            android:foreground="@drawable/animation_click"
+            android:paddingHorizontal="25dp"
+            android:text="Áp dụng"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_type_post" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_unfilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_outline_round_blue"
+            android:foreground="@drawable/animation_click"
+            android:paddingHorizontal="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="Thiết lập lại"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_type_post" />
+
+        <TextView
+            android:id="@+id/txt_type_post"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_outline_round"
+            android:paddingVertical="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="35dp"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_time_end_post" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sp_type_post"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_outline_round"
+            android:foreground="@drawable/animation_click"
+            android:paddingVertical="5dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="35dp"
+            android:scrollbarSize="16dp"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/title_type_post"
+            app:layout_constraintEnd_toEndOf="@+id/txt_type_post"
+            app:layout_constraintTop_toTopOf="@+id/title_type_post" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_get_time"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_arrow_drop_down"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_type_post"
+            app:layout_constraintEnd_toEndOf="@+id/sp_type_post"
+            app:layout_constraintTop_toTopOf="@+id/sp_type_post" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

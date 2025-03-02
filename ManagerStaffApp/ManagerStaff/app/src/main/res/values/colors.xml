@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<resources>-->
+<!--    <color name="black">#FF000000</color>-->
+<!--    <color name="white">#FFFFFFFF</color>-->
+<!--    <color name="gray">#6C6C6C</color>-->
+<!--    <color name="gray3">#61000000</color>-->
+<!--    <color name="gray1">#878787</color>-->
+<!--    <color name="gray2">#EDEDED</color>-->
+<!--    <color name="gray4">#25000000</color>-->
+<!--    <color name="background">#FABAA8</color>-->
+<!--    <color name="orange">#FD5D2B</color>-->
+<!--    <color name="blue">#0D81ED</color>-->
+<!--    <color name="blue_back_left">#F2182CFA</color>-->
+<!--    <color name="blue_back_right">#F200A6FF</color>-->
+<!--    <color name="blue_shadow">#09223A</color>-->
+<!--    <color name="blue_1">#76ACE1</color>-->
+<!--    <color name="blue_2">#BEDFFF</color>-->
+<!--    <color name="blue_1_shadow">#4F6478</color>-->
+<!--    <color name="orange_background">#FABAA8</color>-->
+<!--    <color name="title">#F4977D</color>-->
+<!--    <color name="red">#F44336</color>-->
+<!--    <color name="green">#308730</color>-->
+<!--    <color name="green1">#38C65C</color>-->
+<!--    <color name="green_notify">#257131</color>-->
+<!--</resources>-->
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#6C6C6C</color>
+    <color name="gray3">#61000000</color>
+    <color name="gray1">#878787</color>
+    <color name="gray2">#EDEDED</color>
+    <color name="gray4">#25000000</color>
+    <color name="background">#FABAA8</color>
+    <color name="orange">#FD5D2B</color>
+    <color name="blue">#728840</color>
+    <color name="blue_back_left">#9BB55E</color>
+    <color name="blue_back_right">#C8DE96</color>
+    <color name="blue_shadow">#56682C</color>
+    <color name="blue_1">#DDEEB7</color>
+    <color name="blue_2">#E8F5DB</color>
+    <color name="blue_1_shadow">#282C21</color>
+    <color name="orange_background">#FABAA8</color>
+    <color name="title">#F4977D</color>
+    <color name="red">#F44336</color>
+    <color name="green">#308730</color>
+    <color name="green1">#38C65C</color>
+    <color name="green_notify">#257131</color>
+</resources>

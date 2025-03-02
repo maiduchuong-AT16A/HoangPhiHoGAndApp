@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "921491369973",
+    "project_id": "manager-staff-998fc",
+    "storage_bucket": "manager-staff-998fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921491369973:android:8c5b16439598e53d31fabc",
+        "android_client_info": {
+          "package_name": "com.example.managerstaff"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABXtiGNOgTK92RkNj454nnTYWargXH6Cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

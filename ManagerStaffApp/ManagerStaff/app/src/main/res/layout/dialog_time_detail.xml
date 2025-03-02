@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:background="@drawable/botron_edittext"
+    android:padding="10dp"
+    android:layout_height="170dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_title_time_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="Thời gian"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_title_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Giờ vào:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title_time_detail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_title_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Giờ ra:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/layout_time_out"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title_time_detail" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/botron_edittext"
+        android:backgroundTint="@color/blue"
+        android:foreground="@drawable/animation_click"
+        android:paddingHorizontal="25dp"
+        android:text="Xác nhận"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botron_edittext"
+        android:backgroundTint="@color/blue"
+        android:foreground="@drawable/animation_click"
+        android:visibility="gone"
+        android:paddingHorizontal="25dp"
+        android:text="Lưu"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_delete"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/border_outline_round_blue"
+        android:foreground="@drawable/animation_click"
+        android:paddingHorizontal="5dp"
+        android:text="Xoá"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_time_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/border_outline_round"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_title_start"
+        app:layout_constraintStart_toEndOf="@+id/txt_title_start"
+        app:layout_constraintTop_toTopOf="@+id/txt_title_start">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_get_time_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_clock"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_time_in"
+            app:layout_constraintStart_toEndOf="@+id/txt_time_in"
+            app:layout_constraintTop_toTopOf="@+id/txt_time_in" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_time_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="20:30"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_time_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_outline_round"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_title_end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_title_end">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_get_time_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_clock"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_time_out"
+            app:layout_constraintStart_toEndOf="@+id/txt_time_out"
+            app:layout_constraintTop_toTopOf="@+id/txt_time_out" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_time_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:text="21:30"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

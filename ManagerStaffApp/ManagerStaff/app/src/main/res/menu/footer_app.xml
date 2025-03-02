@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/home"
+        android:icon="@drawable/ic_home_not_choose"
+        android:id="@+id/item_home"
+        />
+    <item android:title="@string/timekeeping"
+        android:icon="@drawable/icon_table"
+        android:id="@+id/item_timekeeping"
+        />
+    <item android:title="@string/calendarA"
+        android:icon="@drawable/icon_calendar"
+        android:id="@+id/item_calendar"
+        />
+    <item android:title="@string/utilities"
+        android:icon="@drawable/icon_utilities"
+        android:id="@+id/item_news"
+        />
+    <item android:title="@string/user"
+        android:icon="@drawable/icon_user"
+        android:id="@+id/item_user"
+        />
+</menu>
